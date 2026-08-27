@@ -1,10 +1,16 @@
-This is a template to help you get started with the Individual Datasheet GitHub Report. Use this template to help guide your team through the initial setup process. You will see ways to get results. When there are multiple methods, choose the method that works for you. There could be other ways to accomplish the same thing, but they are not as guaranteed to work.
+# khunoo_RAS304_F26
 
-You <ins>will need to add and modify files for the different individual assignments. **THIS template is <ins>ALMOST outlines</ins>** what you will need to get you the External Review.
+Hi there! 👋 I'm **Khun** (GitHub: [@Wanderer-Annoy](https://github.com/Wanderer-Annoy)).
 
-# Remove ALL ITEMS not current in the Appendix before submitting report Check Points!
-The four items currently there are placeholders and could serve as possible resources.
+###  About Me
+*  **Role/Major:** Student at Arizona State University 2025-2029 studying Robotic Autonomous Systems Engineering.
+*  **Interests:** Robots, Analytical Artificial Intelligence, Sleep
+*  **First Repo Note:** This is my very first GitHub repository! I'm using it to track my progress, document my work, and collaborate.
 
-## Tips if the template does not initially publish/update correctly:
-If, after checking these [settings](http://localhost:1313/fork-report-website/#help-my-site-is-not-building), you often find that renaming the workflow file initiates builds (for whatever reason).
+---
 
+###  About This Repository
+This repository contains my coursework and project files for **RAS 304 (Fall 2026)**. 
+
+* **Project Goal:** [Brief 1-line description of what this project does, e.g., "Developing a path-planning algorithm for autonomous mobile robots."]
+* **Tech Stack:** Python, ROS2, C++, Markdown, Linux
