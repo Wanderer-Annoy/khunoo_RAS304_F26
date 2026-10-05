@@ -29,7 +29,7 @@
 
     
       
-        <title>Individal Block Diagram - RAS 304 Khunn's Data Sheet</title>
+        <title>Individual Block Diagram - RAS 304 Khunn's Data Sheet</title>
       
     
     
@@ -127,7 +127,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Individal Block Diagram
+              Individual Block Diagram
             
           </span>
         </div>
@@ -512,7 +512,7 @@
   <span class="md-ellipsis">
     
   
-    Individal Block Diagram
+    Individual Block Diagram
   
 
     
@@ -530,7 +530,7 @@
   <span class="md-ellipsis">
     
   
-    Individal Block Diagram
+    Individual Block Diagram
   
 
     
@@ -565,10 +565,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#individual-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example Block Diagram
+        Individual Block Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microcontroller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Team Connections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication Signals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Notes
       
     </span>
   </a>
@@ -912,10 +967,65 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-block-diagram" class="md-nav__link">
+  <a href="#individual-block-diagram" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example Block Diagram
+        Individual Block Diagram
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#microcontroller" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Microcontroller
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#team-connections" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Team Connections
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#power" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#communication-signals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication Signals
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#design-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Design Notes
       
     </span>
   </a>
@@ -995,21 +1105,92 @@
   
 
 
-  <h1>Individal Block Diagram</h1>
+  <h1>Individual Block Diagram</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This needs to be updated with a brief purpose for having the block diagram.
-Things to mention are:
-* power levels
-* sensor
-* Actuator
-* team connections
-* Power source
-* ...</p>
-<p>To get some initial formatting help, one can view <a href="https://embedded-systems-design.github.io/EGR304DataSheetTemplate/Appendix/basic-markdown-examples/">"here"</a> some basic techniques.</p>
-<h2 id="example-block-diagram">Example Block Diagram</h2>
-<p>Showing an example of how to import a screenshot of the block diagram created outside of git and brought into a page.</p>
-<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Example of Indivial Block diagram " src="../individual-block-diagram.png"></a></p>
+<p>The purpose of this block diagram is to show the electrical architecture of my individual subsystem for the <strong>Handheld LiDAR Accessibility Aid</strong>. My subsystem is the <strong>Data Collection Board</strong>, which is responsible for receiving scan and trigger information, coordinating scan data, and sending collected information to the Interpretation Board.</p>
+<p>The diagram shows the microcontroller, communication interfaces, power connections, and connections to the other team members' subsystems.</p>
+<p>The main parts of my subsystem include:</p>
+<ul>
+<li><strong>Microcontroller:</strong> PIC18F57Q43 Curiosity Nano</li>
+<li><strong>Power:</strong> VLOGIC and GND supplied by the team Power Board</li>
+<li><strong>Data collection:</strong> Receives LiDAR/scanning and trigger information</li>
+<li><strong>Communication:</strong> UART interfaces are used for communication between boards</li>
+<li><strong>Team connections:</strong> J1 connects to the Trigger Board, J2 connects to the Laser/Scanning Board, and J3 connects to the Interpretation Board</li>
+<li><strong>Data processing:</strong> The microcontroller coordinates scan information, scan position, and buffered samples</li>
+</ul>
+<p>The Data Collection Board receives power from the team Power Board rather than generating its own primary power. The power and signal connections are separated so that the diagram clearly shows the difference between power distribution and communication signals.</p>
+<h2 id="individual-block-diagram">Individual Block Diagram</h2>
+<p><a class="glightbox" data-type="image" data-width="auto" data-height="auto" href="../individual-block-diagram.png" data-desc-position="bottom"><img alt="Individual Block Diagram - Khun Oo" src="../individual-block-diagram.png"></a></p>
+<p><strong>Figure 1:</strong> Individual block diagram for Khun Oo's Data Collection Board.</p>
+<h2 id="microcontroller">Microcontroller</h2>
+<p>The main microcontroller for my subsystem is the <strong>PIC18F57Q43 Curiosity Nano</strong>. The microcontroller is responsible for coordinating the incoming scan and trigger information and communicating the collected data with the other subsystems.</p>
+<p>The microcontroller includes the following communication interfaces:</p>
+<ul>
+<li><strong>UART1:</strong> Communication with the Trigger Board through J1</li>
+<li><strong>UART3:</strong> Communication with the Laser/Scanning Board through J2</li>
+<li><strong>UART5/PPS:</strong> Communication with the Interpretation Board through J3</li>
+<li><strong>Data processing:</strong> Coordinates scan data, scan position, and buffered samples</li>
+</ul>
+<p>The specific MCU I/O pins and signal connections are shown directly in the block diagram.</p>
+<h2 id="team-connections">Team Connections</h2>
+<p>My Data Collection Board connects to three other team subsystems:</p>
+<table>
+<thead>
+<tr>
+<th>Connector</th>
+<th>Connected Board</th>
+<th>Purpose</th>
+<th>Interface</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>J1</td>
+<td>Trigger Board</td>
+<td>Trigger and scan request communication</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>J2</td>
+<td>Laser/Scanning Board</td>
+<td>LiDAR/scanning data communication</td>
+<td>UART</td>
+</tr>
+<tr>
+<td>J3</td>
+<td>Interpretation Board</td>
+<td>Sends collected data for interpretation</td>
+<td>UART</td>
+</tr>
+</tbody>
+</table>
+<p>The team uses 8-pin ribbon cable connectors. Only the signal pins are counted as microcontroller I/O pins; power and ground are not counted as signal pins.</p>
+<h2 id="power">Power</h2>
+<p>The Data Collection Board receives power from the team Power Board.</p>
+<p>The primary power connection shown on the block diagram is:</p>
+<ul>
+<li><strong>VLOGIC</strong></li>
+<li><strong>GND</strong></li>
+</ul>
+<p>The final nominal voltage, regulation information, and maximum available current will be updated when the team finalizes the power architecture.</p>
+<h2 id="communication-signals">Communication Signals</h2>
+<p>The communication connections use digital serial UART signals. Each UART connection uses two signal lines:</p>
+<ul>
+<li>TX — transmit</li>
+<li>RX — receive</li>
+</ul>
+<p>The signal connections are bidirectional where required because data can be transmitted and received between the connected boards.</p>
+<p>The team ribbon-cable convention is:</p>
+<ul>
+<li>Pin 1: Collection TX / Remote RX</li>
+<li>Pin 2: Collection RX / Remote TX</li>
+<li>Pin 8: GND</li>
+<li>Remaining pins: reserved or not currently assigned</li>
+</ul>
+<h2 id="design-notes">Design Notes</h2>
+<p>The block diagram is intended to document the current electrical architecture of the Data Collection subsystem. Component selections, power specifications, and other values marked <strong>TBD</strong> will be updated as the design is finalized.</p>
+<p>This diagram will also be updated as the PCB schematic and subsystem interfaces are developed.</p>
 
 
 
