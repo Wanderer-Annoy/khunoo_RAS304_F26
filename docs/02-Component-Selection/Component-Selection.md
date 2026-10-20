@@ -103,7 +103,7 @@ The final available current and finalized VLOGIC specification will be updated a
 
 The Data Collection Board power budget is provided below.
 
-[**Download Data Collection Power Budget.xlsx**](Data%20Collection%20Power%20Budget.xlsx)
+[**Download Data Collection Power Budget.xlsx**](https://github.com/Wanderer-Annoy/khunoo_RAS304_F26/raw/refs/heads/main/docs/Data%20Collection%20Power%20Budget.xlsx)
 
 The power budget includes:
 
