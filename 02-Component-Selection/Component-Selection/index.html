@@ -1299,13 +1299,13 @@
 
 <h2 id="data-collection-board">Data Collection Board</h2>
 <p><strong>Team:</strong> 105 — Phoenix Phorce<br>
-<strong>Project:</strong> Handheld LiDAR Accessibility Aid<br>
-<strong>Member:</strong> Khun Oo<br>
-<strong>Subsystem:</strong> Data Collection Board  </p>
+<strong>Project:</strong> Handheld LiDAR Accessibility Aid[cite: 2]<br>
+<strong>Member:</strong> Khun Oo[cite: 2]<br>
+<strong>Subsystem:</strong> Data Collection Board[cite: 1]  </p>
 <h2 id="overview">Overview</h2>
-<p>The Data Collection Board is responsible for coordinating LiDAR scan data, scan position information, and trigger information before sending the collected data to the Interpretation Board.</p>
-<p>The current design uses a <strong>PIC18F57Q43 Curiosity Nano</strong> as the main microcontroller. The board communicates with the Trigger Board, Laser / Scanning Board, and Interpretation Board through UART connections.</p>
-<p>The Data Collection Board receives power from the team Power Board through the <strong>P1 power connection</strong>. Power and communication are kept separate in the team architecture.</p>
+<p>The Data Collection Board is responsible for coordinating LiDAR scan data, scan position information, and trigger information before sending the collected data to the Interpretation Board[cite: 1].</p>
+<p>The current design uses a <strong>PIC18F57Q43 Curiosity Nano</strong> as the main microcontroller[cite: 1, 2]. The board communicates with the Trigger Board, Laser / Scanning Board, and Interpretation Board through UART connections[cite: 3].</p>
+<p>The Data Collection Board receives power from the team Power Board through the <strong>P1 power connection</strong>[cite: 1, 3]. Power and communication are kept separate in the team architecture[cite: 1].</p>
 <hr>
 <h2 id="power-budget-analysis">Power Budget Analysis</h2>
 <p>The power budget for the Data Collection Board is summarized in the sections below, detailing major component current consumption, power rails, external source connections from the team Power Board, and calculated battery life[cite: 1].</p>
@@ -1315,9 +1315,10 @@
 <p></p>
 <h3 id="part-3-external-power-source-2-battery-life-and-notes">Part 3: External Power Source 2, Battery Life, and Notes</h3>
 <p></p>
+<hr>
 <h2 id="major-component-selection">Major Component Selection</h2>
 <h3 id="microcontroller">Microcontroller</h3>
-<p><strong>PIC18F57Q43 Curiosity Nano</strong></p>
+<p><strong>PIC18F57Q43 Curiosity Nano</strong>[cite: 1, 2]</p>
 <table>
 <thead>
 <tr>
@@ -1328,7 +1329,7 @@
 <tbody>
 <tr>
 <td>Component</td>
-<td>PIC18F57Q43 Curiosity Nano</td>
+<td>PIC18F57Q43 Curiosity Nano[cite: 1, 2]</td>
 </tr>
 <tr>
 <td>Part Number</td>
@@ -1340,24 +1341,24 @@
 </tr>
 <tr>
 <td>Logic Level</td>
-<td>3.3 V</td>
+<td>3.3 V[cite: 2]</td>
 </tr>
 <tr>
 <td>Communication</td>
-<td>UART</td>
+<td>UART[cite: 3]</td>
 </tr>
 <tr>
 <td>Power Source</td>
-<td>Team Power Board</td>
+<td>Team Power Board[cite: 1, 3]</td>
 </tr>
 <tr>
 <td>Power Connection</td>
-<td>P1 — VLOGIC / GND</td>
+<td>P1 — VLOGIC / GND[cite: 1, 3]</td>
 </tr>
 </tbody>
 </table>
 <p><strong>Purpose:</strong><br>
-The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning information, buffers collected scan samples, and communicates with the other embedded-system boards.</p>
+The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning information, buffers collected scan samples, and communicates with the other embedded-system boards[cite: 1, 2].</p>
 <h3 id="communication-connections">Communication Connections</h3>
 <table>
 <thead>
@@ -1371,38 +1372,38 @@ The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning informa
 <tbody>
 <tr>
 <td>J1</td>
-<td>Trigger Board</td>
-<td>UART TX/RX</td>
-<td>Receives scan requests and trigger information</td>
+<td>Trigger Board[cite: 3]</td>
+<td>UART TX/RX[cite: 3]</td>
+<td>Receives scan requests and trigger information[cite: 3]</td>
 </tr>
 <tr>
 <td>J2</td>
-<td>Laser / Scanning Board</td>
-<td>UART TX/RX</td>
-<td>Exchanges LiDAR and scanning information</td>
+<td>Laser / Scanning Board[cite: 3]</td>
+<td>UART TX/RX[cite: 3]</td>
+<td>Exchanges LiDAR and scanning information[cite: 3]</td>
 </tr>
 <tr>
 <td>J3</td>
-<td>Interpretation Board</td>
-<td>UART TX/RX</td>
-<td>Sends collected information for interpretation</td>
+<td>Interpretation Board[cite: 3]</td>
+<td>UART TX/RX[cite: 3]</td>
+<td>Sends collected information for interpretation[cite: 3]</td>
 </tr>
 </tbody>
 </table>
-<p>The Laser / Scanning Board documentation specifies <strong>3.3 V UART signals</strong> for the J2 connection to the Data Collection Board. Therefore, 3.3 V logic is currently used as a design assumption for the Data Collection Board.</p>
+<p>The Laser / Scanning Board documentation specifies <strong>3.3 V UART signals</strong> for the J2 connection to the Data Collection Board[cite: 2]. Therefore, 3.3 V logic is currently used as a design assumption for the Data Collection Board.</p>
 <blockquote>
-<p><strong>Note:</strong> The microcontroller was selected for the project and therefore does not require a three-option component-selection comparison. It is still included in the power budget because it consumes power.</p>
+<p><strong>Note:</strong> The microcontroller was selected for the project and therefore does not require a three-option component-selection comparison[cite: 6, 12]. It is still included in the power budget because it consumes power[cite: 7].</p>
 </blockquote>
 <hr>
 <h2 id="power-architecture">Power Architecture</h2>
-<p>The Data Collection Board does not contain its own battery or primary system power source. Power is supplied by the team's Power Board.</p>
+<p>The Data Collection Board does not contain its own battery or primary system power source[cite: 1]. Power is supplied by the team's Power Board[cite: 1, 3].</p>
 <p>The Power Board contains the battery pack, protection and switching circuitry, voltage regulation, and power distribution circuitry.</p>
-<p>The Data Collection Board receives power through:</p>
+<p>The Data Collection Board receives power through[cite: 1, 3]:</p>
 <ul>
-<li><strong>P1 — VLOGIC</strong></li>
-<li><strong>P1 — GND</strong></li>
+<li><strong>P1 — VLOGIC</strong>[cite: 1, 3]</li>
+<li><strong>P1 — GND</strong>[cite: 1, 3]</li>
 </ul>
-<p>The UART ribbon cables <strong>J1, J2, and J3</strong> are used for communication and are separate from the primary power connection.</p>
+<p>The UART ribbon cables <strong>J1, J2, and J3</strong> are used for communication and are separate from the primary power connection[cite: 1, 3].</p>
 <h3 id="vlogic-power-rail">VLOGIC Power Rail</h3>
 <table>
 <thead>
@@ -1416,18 +1417,18 @@ The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning informa
 </thead>
 <tbody>
 <tr>
-<td>PIC18F57Q43 Curiosity Nano</td>
+<td>PIC18F57Q43 Curiosity Nano[cite: 1, 2]</td>
 <td>DM164150</td>
-<td>3.3 V logic</td>
+<td>3.3 V logic[cite: 2]</td>
 <td style="text-align: right;">1</td>
-<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD[cite: 2]</td>
 </tr>
 </tbody>
 </table>
-<p>A <strong>25% safety margin</strong> is applied to the total required current.</p>
+<p>A <strong>25% safety margin</strong> is applied to the total required current[cite: 7].</p>
 <p><strong>Power budget calculation:</strong></p>
-<p><code>Required VLOGIC Current = Subtotal Current × 1.25</code></p>
-<p>The final absolute-maximum current is currently marked <strong>TBD</strong> because it must be supported by the appropriate component datasheet rather than estimated from a connector or regulator current rating.</p>
+<p><code>Required VLOGIC Current = Subtotal Current × 1.25</code>[cite: 7]</p>
+<p>The final absolute-maximum current is currently marked <strong>TBD</strong> because it must be supported by the appropriate component datasheet rather than estimated from a connector or regulator current rating[cite: 2, 7].</p>
 <hr>
 <h2 id="power-source">Power Source</h2>
 <table>
@@ -1440,58 +1441,56 @@ The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning informa
 <tbody>
 <tr>
 <td>Source</td>
-<td>Team Power Board</td>
+<td>Team Power Board[cite: 1, 3]</td>
 </tr>
 <tr>
 <td>Connection</td>
-<td>P1</td>
+<td>P1[cite: 1, 3]</td>
 </tr>
 <tr>
 <td>Rails</td>
-<td>VLOGIC / GND</td>
+<td>VLOGIC / GND[cite: 1, 3]</td>
 </tr>
 <tr>
 <td>Local Battery</td>
-<td>None</td>
+<td>None[cite: 1]</td>
 </tr>
 <tr>
 <td>Local Primary Regulator</td>
-<td>None currently specified</td>
+<td>None currently specified[cite: 1]</td>
 </tr>
 <tr>
 <td>Available P1 Current</td>
-<td>TBD</td>
+<td>TBD[cite: 2]</td>
 </tr>
 <tr>
 <td>Final VLOGIC Voltage</td>
-<td>TBD by team power design</td>
+<td>TBD by team power design[cite: 2]</td>
 </tr>
 </tbody>
 </table>
-<p>The team Power Board distributes dedicated power connections to each subsystem. <strong>P1</strong> is assigned to the Data Collection Board.</p>
-<p>The final available current and finalized VLOGIC specification will be updated after the Power Board design is completed.</p>
+<p>The team Power Board distributes dedicated power connections to each subsystem[cite: 1]. <strong>P1</strong> is assigned to the Data Collection Board[cite: 1].</p>
+<p>The final available current and finalized VLOGIC specification will be updated after the Power Board design is completed[cite: 2].</p>
 <hr>
 <h2 id="power-budget">Power Budget</h2>
 <p>The Data Collection Board power budget is provided below.</p>
-<p><a href="https://github.com/Wanderer-Annoy/khunoo_RAS304_F26/raw/refs/heads/main/docs/Data%20Collection%20Power%20Budget.xlsx"><strong>Download Data Collection Power Budget.xlsx</strong></a></p>
-<p>The power budget includes:</p>
-<ul>
-<li>Major powered components</li>
-<li>Component quantities</li>
-<li>Supply voltage</li>
-<li>Maximum current</li>
-<li>VLOGIC power rail</li>
-<li>25% current safety margin</li>
-<li>Power Board P1 connection</li>
-<li>External power source information</li>
-<li>Remaining-current calculations</li>
-</ul>
-<p>Values marked <strong>TBD</strong> will be updated as the schematic, component selections, and Power Board specifications are finalized.</p>
+<p><a href="https://github.com/Wanderer-Annoy/khunoo_RAS304_F26/raw/refs/heads/main/02-Component-Selection/Data%20Collection%20Power%20Budget.xlsx"><strong>Download Data Collection Power Budget.xlsx</strong></a></p>
+<p>The power budget includes[cite: 7]:
+- Major powered components[cite: 7]
+- Component quantities[cite: 7]
+- Supply voltage[cite: 7]
+- Maximum current[cite: 7]
+- VLOGIC power rail[cite: 1, 7]
+- 25% current safety margin[cite: 7]
+- Power Board P1 connection[cite: 1, 7]
+- External power source information[cite: 7]
+- Remaining-current calculations[cite: 7]</p>
+<p>Values marked <strong>TBD</strong> will be updated as the schematic, component selections, and Power Board specifications are finalized[cite: 2].</p>
 <hr>
 <h2 id="design-notes">Design Notes</h2>
-<p>The current design keeps the Data Collection Board focused on data coordination. Its primary purpose is to receive, organize, buffer, and transmit information between the other embedded-system boards.</p>
+<p>The current design keeps the Data Collection Board focused on data coordination[cite: 1]. Its primary purpose is to receive, organize, buffer, and transmit information between the other embedded-system boards[cite: 1].</p>
 <p>The LiDAR, scan motor, audio system, vibration motor, battery, and main voltage regulators belong to other team subsystems and therefore are not included as loads in the Data Collection Board power budget.</p>
-<p>The current architecture will be updated as the PCB schematic, component selections, and final team power specifications are developed.</p>
+<p>The current architecture will be updated as the PCB schematic, component selections, and final team power specifications are developed[cite: 2].</p>
 
 
 
