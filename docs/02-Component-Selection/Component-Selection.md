@@ -18,7 +18,18 @@ The current design uses a **PIC18F57Q43 Curiosity Nano** as the main microcontro
 The Data Collection Board receives power from the team Power Board through the **P1 power connection**. Power and communication are kept separate in the team architecture.
 
 ---
+## Power Budget Analysis
 
+The power budget for the Data Collection Board is summarized in the sections below, detailing major component current consumption, power rails, external source connections from the team Power Board, and calculated battery life[cite: 1].
+
+### Part 1: Main Components and +12V Rail
+![Data Collection Power Budget Part 1](DCPB.png)
+
+### Part 2: +5V, +3.3V Rails, and External Power Source 1
+![Data Collection Power Budget Part 2](DCPB2.png)
+
+### Part 3: External Power Source 2, Battery Life, and Notes
+![Data Collection Power Budget Part 3](DCPB3.png)
 ## Major Component Selection
 
 ### Microcontroller
