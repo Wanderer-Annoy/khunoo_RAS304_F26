@@ -1,58 +1,130 @@
 ---
-title: Component Selection Example
+title: Component Selection
 ---
 
-## Examples
+## Data Collection Board
 
-### Style 1
+**Team:** 105 — Phoenix Phorce  
+**Project:** Handheld LiDAR Accessibility Aid  
+**Member:** Khun Oo  
+**Subsystem:** Data Collection Board  
 
-> This is the example found in the assignment, uses more html
+## Overview
 
-*Table 1: Example component selection*
+The Data Collection Board is responsible for coordinating LiDAR scan data, scan position information, and trigger information before sending the collected data to the Interpretation Board.
 
-**External Clock Module**
+The current design uses a **PIC18F57Q43 Curiosity Nano** as the main microcontroller. The board communicates with the Trigger Board, Laser / Scanning Board, and Interpretation Board through UART connections.
 
-| **Solution**                                                                                                                                                                                      | **Pros**                                                                                                                                    | **Cons**                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------- |
-| ![](image1.png)<br>Option 1.<br> XC1259TR-ND surface mount crystal<br>$1/each<br>[link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)                 | \* Inexpensive[^1]<br>\* Compatible with PSoC<br>\* Meets surface mount constraint of project                                               | \* Requires external components and support circuitry for interface<br>\* Needs special PCB layout. |
-| ![](image3.png)<br>\* Option 2. <br>\* CTX936TR-ND surface mount oscillator <br>\* $1/each <br>\* [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940) | \* Outputs a square wave <br>\* Stable over operating temperature <br> \* Direct interface with PSoC (no external circuitry required) range | * More expensive <br>\* Slow shipping speed                                                         |
+The Data Collection Board receives power from the team Power Board through the **P1 power connection**. Power and communication are kept separate in the team architecture.
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+---
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+## Major Component Selection
 
-### Style 2
+### Microcontroller
 
-> Also acceptable, more markdown friendly
+**PIC18F57Q43 Curiosity Nano**
 
-**External Clock Module**
+| Specification | Selection |
+| --- | --- |
+| Component | PIC18F57Q43 Curiosity Nano |
+| Part Number | DM164150 |
+| Quantity | 1 |
+| Logic Level | 3.3 V |
+| Communication | UART |
+| Power Source | Team Power Board |
+| Power Connection | P1 — VLOGIC / GND |
 
-1. XC1259TR-ND surface mount crystal
+**Purpose:**  
+The PIC18F57Q43 Curiosity Nano coordinates incoming trigger and scanning information, buffers collected scan samples, and communicates with the other embedded-system boards.
 
-    ![](image1.png)
+### Communication Connections
 
-    * $1/each
-    * [link to product](http://www.digikey.com/product-detail/en/ECS-40.3-S-5PX-TR/XC1259TR-ND/827366)
+| Connector | Connected Board | Interface | Purpose |
+| --- | --- | --- | --- |
+| J1 | Trigger Board | UART TX/RX | Receives scan requests and trigger information |
+| J2 | Laser / Scanning Board | UART TX/RX | Exchanges LiDAR and scanning information |
+| J3 | Interpretation Board | UART TX/RX | Sends collected information for interpretation |
 
-    | Pros                                      | Cons                                                             |
-    | ----------------------------------------- | ---------------------------------------------------------------- |
-    | Inexpensive                               | Requires external components and support circuitry for interface |
-    | Compatible with PSoC                      | Needs special PCB layout.                                        |
-    | Meets surface mount constraint of project |
+The Laser / Scanning Board documentation specifies **3.3 V UART signals** for the J2 connection to the Data Collection Board. Therefore, 3.3 V logic is currently used as a design assumption for the Data Collection Board.
 
-1. CTX936TR-ND surface mount oscillator
+> **Note:** The microcontroller was selected for the project and therefore does not require a three-option component-selection comparison. It is still included in the power budget because it consumes power.
 
-    ![](image3.png)
+---
 
-    * $1/each
-    * [Link to product](http://www.digikey.com/product-detail/en/636L3I001M84320/CTX936TR-ND/2292940)
+## Power Architecture
 
-    | Pros                                                              | Cons                |
-    | ----------------------------------------------------------------- | ------------------- |
-    | Outputs a square wave                                             | More expensive      |
-    | Stable over operating temperature                                 | Slow shipping speed |
-    | Direct interface with PSoC (no external circuitry required) range |
+The Data Collection Board does not contain its own battery or primary system power source. Power is supplied by the team's Power Board.
 
-**Choice:** Option 2: CTX936TR-ND surface mount oscillator
+The Power Board contains the battery pack, protection and switching circuitry, voltage regulation, and power distribution circuitry.
 
-**Rationale:** A clock oscillator is easier to work with because it requires no external circuitry in order to interface with the PSoC. This is particularly important because we are not sure of the electrical characteristics of the PCB, which could affect the oscillation of a crystal. While the shipping speed is slow, according to the website if we order this week it will arrive within 3 weeks.
+The Data Collection Board receives power through:
+
+- **P1 — VLOGIC**
+- **P1 — GND**
+
+The UART ribbon cables **J1, J2, and J3** are used for communication and are separate from the primary power connection.
+
+### VLOGIC Power Rail
+
+| Component | Part Number | Supply | Quantity | Maximum Current |
+| --- | --- | --- | ---: | ---: |
+| PIC18F57Q43 Curiosity Nano | DM164150 | 3.3 V logic | 1 | TBD |
+
+A **25% safety margin** is applied to the total required current.
+
+**Power budget calculation:**
+
+`Required VLOGIC Current = Subtotal Current × 1.25`
+
+The final absolute-maximum current is currently marked **TBD** because it must be supported by the appropriate component datasheet rather than estimated from a connector or regulator current rating.
+
+---
+
+## Power Source
+
+| Specification | Current Selection |
+| --- | --- |
+| Source | Team Power Board |
+| Connection | P1 |
+| Rails | VLOGIC / GND |
+| Local Battery | None |
+| Local Primary Regulator | None currently specified |
+| Available P1 Current | TBD |
+| Final VLOGIC Voltage | TBD by team power design |
+
+The team Power Board distributes dedicated power connections to each subsystem. **P1** is assigned to the Data Collection Board.
+
+The final available current and finalized VLOGIC specification will be updated after the Power Board design is completed.
+
+---
+
+## Power Budget
+
+The Data Collection Board power budget is provided below.
+
+[**Download Data Collection Power Budget.xlsx**](Data%20Collection%20Power%20Budget.xlsx)
+
+The power budget includes:
+
+- Major powered components
+- Component quantities
+- Supply voltage
+- Maximum current
+- VLOGIC power rail
+- 25% current safety margin
+- Power Board P1 connection
+- External power source information
+- Remaining-current calculations
+
+Values marked **TBD** will be updated as the schematic, component selections, and Power Board specifications are finalized.
+
+---
+
+## Design Notes
+
+The current design keeps the Data Collection Board focused on data coordination. Its primary purpose is to receive, organize, buffer, and transmit information between the other embedded-system boards.
+
+The LiDAR, scan motor, audio system, vibration motor, battery, and main voltage regulators belong to other team subsystems and therefore are not included as loads in the Data Collection Board power budget.
+
+The current architecture will be updated as the PCB schematic, component selections, and final team power specifications are developed.
