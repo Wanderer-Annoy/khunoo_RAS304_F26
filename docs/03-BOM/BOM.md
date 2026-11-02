@@ -1,11 +1,11 @@
-
 ---
 title: Bill of Materials
-tags:
-  - RAS304
-  - Embedded Systems
-  - Hardware
-  - DigiKey
+---
+
+**Team:** 105 — Phoenix Phorce  
+**Project:** Handheld LiDAR Accessibility Aid  
+**Member:** Khun Oo  
+**Subsystem:** Data Collection Board  
 ---
 
 ## Overview
