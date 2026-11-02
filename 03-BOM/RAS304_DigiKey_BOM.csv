@@ -1,0 +1,9 @@
+Reference,Schematic value,Description / preserved specification,Planning quantity,DigiKey manufacturer part / candidate,DigiKey price snapshot,DigiKey product URL
+U2,KNO_PIC18F57Q43_Curiosity_Nano,PIC18F57Q43 Curiosity Nano development board,1 required + 1 spare (2),Microchip DM164150,Not priced / verify whether supplied by course,https://www.digikey.com/en/products/detail/microchip-technology/DM164150/
+U1,LM7805_KNO,"5 V linear regulator, TO-220 candidate",3 (1 prototype + 1 PCB + 1 spare),STMicroelectronics L7805CV,$1.08,https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964
+F1,Fuse,"Fuse; current rating, voltage rating, speed, and physical size not specified",HOLD - do not order until rated,Not selected,TBD,
+C1,0.1 uF,"Ceramic capacitor, 0.1 µF, 50 V X7R, 0805 proposed",3 (1 prototype + 1 PCB + 1 spare),KEMET C0805X104K5RACAUTO,$0.51 each (shown cut tape),https://www.digikey.com/en/products/detail/kemet/C0805X104K5RACAUTO/3314987
+R1,330 Ω,"Resistor, 330 Ω, 1%, 1/8 W, 0805 proposed",3 (1 prototype + 1 PCB + 1 spare),YAGEO RC0805FR-07330RL,$0.10 each (shown cut tape),https://www.digikey.com/en/products/detail/yageo/RC0805FR-07330RL/727866
+R2,10 kΩ,"Resistor, 10 kΩ, 1%, 1/8 W, 0805 proposed",3 (1 prototype + 1 PCB + 1 spare),Stackpole RMCF0805FT10K0RES,$0.10 each (shown cut tape),https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/0805/52
+D1,DEBUG LED,"Indicator LED; color, lens, size, and footprint not specified; red 5 mm through-hole candidate only",3 proposed; confirm color/footprint,Inolux INL-5AR30 (candidate),$0.20 each,https://www.digikey.com/en/products/detail/inolux/INL-5AR30/7604627
+SW1,DEBUG Button / SW_Omron_B3FS,Omron B3FS tactile switch; exact suffix/footprint needs confirmation,3 (1 prototype + 1 PCB + 1 spare),Aratas (formerly Omron) B3FS-1000P,$0.75 each (cut tape),https://www.digikey.com/en/products/detail/aratas-america-llc/B3FS-1000P/277814
