@@ -1,13 +1,6 @@
 ---
 title: Bill of Materials
 ---
-
-**Team:** 105 — Phoenix Phorce  
-**Project:** Handheld LiDAR Accessibility Aid  
-**Member:** Khun Oo  
-**Subsystem:** Data Collection Board  
----
-
 ## Overview
 
 This Bill of Materials (BOM) identifies the components required to construct the **Data Collection Board** for the ASU RAS 304 Embedded Systems project.
