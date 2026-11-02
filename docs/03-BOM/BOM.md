@@ -26,7 +26,7 @@ The BOM includes planning quantities for breadboard prototyping, final PCB assem
 |:---|:---:|---:|---:|:---|:---|:---:|:---:|:---:|
 | PIC18F57Q43 Curiosity Nano Development Board | 2 | TBD | TBD | Microchip | DM164150 | [DigiKey](https://www.digikey.com/en/products/detail/microchip-technology/DM164150/) | [Datasheet](https://www.microchip.com/en-us/development-tool/DM164150) | U2 |
 | 5V Linear Voltage Regulator, TO-220 | 3 | $1.08 | $3.24 | STMicroelectronics | L7805CV | [DigiKey](https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964) | [Datasheet](https://www.st.com/resource/en/datasheet/l78.pdf) | U1 |
-| Fuse (Rating and Package TBD) | TBD | TBD | TBD | TBD | TBD | Pending selection | TBD | F1 |
+| 500 mA Fast-Acting Surface Mount Fuse, 63V, 1206 | 3 | $1.47 | $4.41 | Littelfuse | 0437.500WR | [DigiKey](https://www.digikey.com/en/products/detail/littelfuse-inc/0437-500WR/1905895) | [Datasheet](https://www.littelfuse.com/assetdocs/fuse-437-datasheet?assetguid=7efbf979-42bb-4da1-b7b4-e1ec5d2b3789) | F1 |
 | 0.1 µF Ceramic Capacitor, 50V, X7R, 0805 | 3 | $0.51 | $1.53 | KEMET | C0805X104K5RACAUTO | [DigiKey](https://www.digikey.com/en/products/detail/kemet/C0805X104K5RACAUTO/3314987) | [Datasheet](https://www.kemet.com/) | C1 |
 | 330 Ω Resistor, 1%, 1/8W, 0805 | 3 | $0.10 | $0.30 | YAGEO | RC0805FR-07330RL | [DigiKey](https://www.digikey.com/en/products/detail/yageo/RC0805FR-07330RL/727866) | [Datasheet](https://www.yageo.com/) | R1 |
 | 10 kΩ Resistor, 1%, 1/8W, 0805 | 3 | $0.10 | $0.30 | Stackpole | RMCF0805FT10K0RES | [DigiKey](https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/0805/52) | [Datasheet](https://www.seielect.com/) | R2 |
