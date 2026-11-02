@@ -32,7 +32,7 @@
 
     
       
-        <title>Bill of Materials - RAS 304 Khunn's Data Sheet</title>
+        <title>BOM - RAS 304 Khunn's Data Sheet</title>
       
     
     
@@ -120,7 +120,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bill of Materials
+              BOM
             
           </span>
         </div>
@@ -617,7 +617,7 @@
   <span class="md-ellipsis">
     
   
-    Bill of Materials
+    BOM
   
 
     
@@ -635,7 +635,7 @@
   <span class="md-ellipsis">
     
   
-    Bill of Materials
+    BOM
   
 
     
@@ -670,10 +670,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bill of Materials Example (as Table)
+        Bill of Materials
       
     </span>
   </a>
@@ -681,10 +681,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#cost-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bill of Materials Example (as Image)
+        Cost Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-selection-and-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Selection and Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purchasing-and-assembly-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purchasing and Assembly Notes
       
     </span>
   </a>
@@ -946,10 +979,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-table" class="md-nav__link">
+  <a href="#bill-of-materials" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bill of Materials Example (as Table)
+        Bill of Materials
       
     </span>
   </a>
@@ -957,10 +990,43 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#bill-of-materials-example-as-image" class="md-nav__link">
+  <a href="#cost-summary" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Bill of Materials Example (as Image)
+        Cost Summary
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#component-selection-and-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Component Selection and Verification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#external-interfaces" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        External Interfaces
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#purchasing-and-assembly-notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Purchasing and Assembly Notes
       
     </span>
   </a>
@@ -1040,68 +1106,230 @@
   
 
 
-  <h1>Bill of Materials</h1>
+  <h1>BOM</h1>
 
+<hr />
+<p>title: Bill of Materials
+tags:
+  - RAS304
+  - Embedded Systems
+  - Hardware
+  - DigiKey</p>
+<hr />
 <h2 id="overview">Overview</h2>
-<p>written context</p>
-<h2 id="bill-of-materials-example-as-table">Bill of Materials Example (as Table)</h2>
-<p><em>Table ##: An example of one approach to adding your BOM table to this section.</em></p>
+<p>This Bill of Materials (BOM) identifies the components required to construct the <strong>Data Collection Board</strong> for the ASU RAS 304 Embedded Systems project.</p>
+<p>The board is designed around the <strong>KNO PIC18F57Q43 Curiosity Nano</strong> microcontroller. Its power system accepts a +9V input and regulates it to +5V using an LM7805 linear voltage regulator. Additional components support circuit protection, debugging, and external communication interfaces.</p>
+<p>All component selections are based on the supplied KiCad schematic. DigiKey is the selected vendor for component sourcing.</p>
+<p>The BOM includes planning quantities for breadboard prototyping, final PCB assembly, and spare components.</p>
+<h2 id="bill-of-materials">Bill of Materials</h2>
+<p><strong>Table 1.</strong> Component list for the RAS 304 Data Collection Board.</p>
 <table>
 <thead>
 <tr>
-<th style="text-align: left;"><strong>Part Name/Description</strong></th>
-<th style="text-align: left;"><strong>Qty</strong></th>
-<th style="text-align: left;"><strong>Unit Cost</strong></th>
-<th style="text-align: left;"><strong>Total Cost</strong></th>
-<th style="text-align: left;"><strong>Manufacture</strong></th>
-<th style="text-align: left;"><strong>Manufacturer #</strong></th>
-<th style="text-align: left;"><strong>Vendor Link</strong></th>
-<th style="text-align: left;"><strong>Datasheet Link</strong></th>
-<th style="text-align: left;"><strong>Schematic Reference Designators</strong></th>
+<th style="text-align: left;">Part Name / Description</th>
+<th style="text-align: center;">Qty.</th>
+<th style="text-align: right;">Unit Cost</th>
+<th style="text-align: right;">Total Cost</th>
+<th style="text-align: left;">Manufacturer</th>
+<th style="text-align: left;">Manufacturer Part Number</th>
+<th style="text-align: center;">Vendor Link</th>
+<th style="text-align: center;">Datasheet Link</th>
+<th style="text-align: center;">Schematic Reference</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">8-bit SIPO/SISO Shift Register, SOIC-16 package</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: left;">$0.49</td>
-<td style="text-align: left;">$ 0.49</td>
-<td style="text-align: left;">NXP</td>
-<td style="text-align: left;">74HC595D,112</td>
-<td style="text-align: left;"><a href="https://www.digikey.com/en/products/detail/nexperia-usa-inc/74HC595D-112/763550">DigiKey</a></td>
-<td style="text-align: left;"><a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf">datasheet link</a></td>
-<td style="text-align: left;">U1</td>
+<td style="text-align: left;">PIC18F57Q43 Curiosity Nano Development Board</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: left;">Microchip</td>
+<td style="text-align: left;">DM164150</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/microchip-technology/DM164150/">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.microchip.com/en-us/development-tool/DM164150">Datasheet</a></td>
+<td style="text-align: center;">U2</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, +/-10%, X7R, 50V, 0805 package</td>
-<td style="text-align: left;">10</td>
-<td style="text-align: left;">0.2750</td>
-<td style="text-align: left;">$2.75</td>
+<td style="text-align: left;">5V Linear Voltage Regulator, TO-220</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$1.08</td>
+<td style="text-align: right;">$3.24</td>
+<td style="text-align: left;">STMicroelectronics</td>
+<td style="text-align: left;">L7805CV</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.st.com/resource/en/datasheet/l78.pdf">Datasheet</a></td>
+<td style="text-align: center;">U1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fuse (Rating and Package TBD)</td>
+<td style="text-align: center;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: right;">TBD</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: left;">TBD</td>
+<td style="text-align: center;">Pending selection</td>
+<td style="text-align: center;">TBD</td>
+<td style="text-align: center;">F1</td>
+</tr>
+<tr>
+<td style="text-align: left;">0.1 µF Ceramic Capacitor, 50V, X7R, 0805</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$0.51</td>
+<td style="text-align: right;">$1.53</td>
 <td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805F104K5RACTU</td>
-<td style="text-align: left;">PRLTA 109</td>
-<td style="text-align: left;">n/a</td>
-<td style="text-align: left;">C2, C4, C6, C7, C8, C9, C10, C11, C12, C16</td>
+<td style="text-align: left;">C0805X104K5RACAUTO</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/kemet/C0805X104K5RACAUTO/3314987">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.kemet.com/">Datasheet</a></td>
+<td style="text-align: center;">C1</td>
+</tr>
+<tr>
+<td style="text-align: left;">330 Ω Resistor, 1%, 1/8W, 0805</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$0.10</td>
+<td style="text-align: right;">$0.30</td>
+<td style="text-align: left;">YAGEO</td>
+<td style="text-align: left;">RC0805FR-07330RL</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/yageo/RC0805FR-07330RL/727866">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.yageo.com/">Datasheet</a></td>
+<td style="text-align: center;">R1</td>
+</tr>
+<tr>
+<td style="text-align: left;">10 kΩ Resistor, 1%, 1/8W, 0805</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$0.10</td>
+<td style="text-align: right;">$0.30</td>
+<td style="text-align: left;">Stackpole</td>
+<td style="text-align: left;">RMCF0805FT10K0RES</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/0805/52">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.seielect.com/">Datasheet</a></td>
+<td style="text-align: center;">R2</td>
+</tr>
+<tr>
+<td style="text-align: left;">Red Indicator LED (Candidate)</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$0.20</td>
+<td style="text-align: right;">$0.60</td>
+<td style="text-align: left;">Inolux</td>
+<td style="text-align: left;">INL-5AR30</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/inolux/INL-5AR30/7604627">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.inolux-corp.com/">Datasheet</a></td>
+<td style="text-align: center;">D1</td>
+</tr>
+<tr>
+<td style="text-align: left;">Omron B3FS Tactile Push Button</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: right;">$0.75</td>
+<td style="text-align: right;">$2.25</td>
+<td style="text-align: left;">Aratas (formerly Omron)</td>
+<td style="text-align: left;">B3FS-1000P</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/aratas-america-llc/B3FS-1000P/277814">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://omronfs.omron.com/">Datasheet</a></td>
+<td style="text-align: center;">SW1</td>
 </tr>
 </tbody>
 </table>
-<p>Note: Setting it up as a table is nice because it is completely viewable without scaling issues. <ins>Downside</ins> is that you have to do the math.</p>
+<h2 id="cost-summary">Cost Summary</h2>
+<p><strong>Table 2.</strong> Estimated component purchasing cost.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Description</th>
+<th style="text-align: right;">Estimated Cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Voltage Regulator (U1)</td>
+<td style="text-align: right;">$3.24</td>
+</tr>
+<tr>
+<td style="text-align: left;">Ceramic Capacitor (C1)</td>
+<td style="text-align: right;">$1.53</td>
+</tr>
+<tr>
+<td style="text-align: left;">330 Ω Resistors (R1)</td>
+<td style="text-align: right;">$0.30</td>
+</tr>
+<tr>
+<td style="text-align: left;">10 kΩ Resistors (R2)</td>
+<td style="text-align: right;">$0.30</td>
+</tr>
+<tr>
+<td style="text-align: left;">Debug LED (D1)</td>
+<td style="text-align: right;">$0.60</td>
+</tr>
+<tr>
+<td style="text-align: left;">Push Button (SW1)</td>
+<td style="text-align: right;">$2.25</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Subtotal</strong></td>
+<td style="text-align: right;"><strong>$8.22</strong></td>
+</tr>
+</tbody>
+</table>
+<p><em>Note: The subtotal excludes the microcontroller development board, fuse, shipping, and applicable taxes. Prices are estimates and may change depending on DigiKey availability and order quantity.</em></p>
+<h2 id="component-selection-and-verification">Component Selection and Verification</h2>
+<p>The following considerations apply before finalizing the hardware order:</p>
 <ul>
-<li>You could also import your BOM via a screenshot of the spreadsheet created BOM</li>
+<li><strong>U2 – Microcontroller:</strong> The Microchip PIC18F57Q43 Curiosity Nano is the primary controller. Confirm whether this development board is already supplied by ASU before purchasing.</li>
+<li><strong>U1 – Voltage Regulator:</strong> The STMicroelectronics L7805CV is a candidate for the LM7805 circuit. Verify its package, pin configuration, and PCB footprint.</li>
+<li><strong>F1 – Fuse:</strong> The schematic identifies a fuse but does not specify its current rating, voltage rating, or physical package. Final selection requires verification.</li>
+<li><strong>C1 – Capacitor:</strong> A 0.1 µF ceramic capacitor is retained as specified in the schematic. The 0805 package is a proposed footprint.</li>
+<li><strong>R1 and R2 – Resistors:</strong> The original resistance values of 330 Ω and 10 kΩ are retained. The 0805 package is proposed for PCB assembly.</li>
+<li><strong>D1 – Debug LED:</strong> The selected red LED is a candidate. Verify its color, dimensions, polarity, and PCB footprint.</li>
+<li><strong>SW1 – Debug Button:</strong> The B3FS-1000P is a candidate for the specified Omron B3FS switch. Verify the exact footprint before ordering.</li>
 </ul>
-<h2 id="bill-of-materials-example-as-image">Bill of Materials Example (as Image)</h2>
-<p><img _2000_="&quot;2000&quot;" alt="" src="../BOM-Screenshot.png" style="style" width:="width:" />
-<strong>Figure 2:</strong> Example Bill of Materials as a screenshot.</p>
-<p>As you can see, the text can be difficult to read without opening the image.</p>
+<h2 id="external-interfaces">External Interfaces</h2>
+<p>The schematic also provides three external communication interfaces:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Interface</th>
+<th style="text-align: left;">Connections</th>
+<th style="text-align: left;">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Trigger</td>
+<td style="text-align: left;">RX, TX, GND</td>
+<td style="text-align: left;">Trigger communication</td>
+</tr>
+<tr>
+<td style="text-align: left;">Laser / Scanning</td>
+<td style="text-align: left;">RX, TX, GND</td>
+<td style="text-align: left;">Laser and scanning communication</td>
+</tr>
+<tr>
+<td style="text-align: left;">Interpretation</td>
+<td style="text-align: left;">RX, TX, GND</td>
+<td style="text-align: left;">External interpretation interface</td>
+</tr>
+</tbody>
+</table>
+<p>These interfaces are represented by signal connections in the current schematic. Physical connectors, mating cables, and mounting hardware must be selected once their footprints and connection requirements are finalized.</p>
+<h2 id="purchasing-and-assembly-notes">Purchasing and Assembly Notes</h2>
+<p>The quantities in this BOM are preliminary planning quantities.</p>
+<p>For standard discrete components, the proposed quantity of three accounts for:</p>
+<ol>
+<li>One component for breadboard prototyping.</li>
+<li>One component for the final PCB.</li>
+<li>One additional component as a spare.</li>
+</ol>
+<p>The development board quantity includes one primary unit and one spare.</p>
+<p>All components should be checked against the final KiCad footprints and electrical requirements before submitting the purchase request.</p>
+<p><strong>Vendor:</strong> DigiKey</p>
+<p><strong>Project:</strong> ASU RAS 304 – Data Collection Board</p>
+<p><strong>Primary Controller:</strong> KNO PIC18F57Q43 Curiosity Nano</p>
+<p><strong>Power Input:</strong> +9V</p>
+<p><strong>Regulated Output:</strong> +5V</p>
 
 
 
 
 
 
-
-  
-  
 
 
 
