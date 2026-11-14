@@ -25,7 +25,7 @@
       
       
       <link rel="icon" href="../../static/logo304.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
             
 
     
@@ -692,32 +692,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#component-selection-and-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Component Selection and Verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#external-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
       
         External Interfaces
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#purchasing-and-assembly-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Purchasing and Assembly Notes
       
     </span>
   </a>
@@ -1001,32 +979,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#component-selection-and-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Component Selection and Verification
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#external-interfaces" class="md-nav__link">
     <span class="md-ellipsis">
       
         External Interfaces
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#purchasing-and-assembly-notes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Purchasing and Assembly Notes
       
     </span>
   </a>
@@ -1109,16 +1065,16 @@
   <h1>Bill of Materials</h1>
 
 <h2 id="overview">Overview</h2>
-<p>This Bill of Materials (BOM) identifies the components required to construct the <strong>Data Collection Board</strong> for the ASU RAS 304 Embedded Systems project.</p>
-<p>The board is designed around the <strong>KNO PIC18F57Q43 Curiosity Nano</strong> microcontroller. Its power system accepts a +9V input and regulates it to +5V using an LM7805 linear voltage regulator. Additional components support circuit protection, debugging, and external communication interfaces.</p>
-<p>All component selections are based on the supplied KiCad schematic. DigiKey is the selected vendor for component sourcing.</p>
-<p>The BOM includes planning quantities for breadboard prototyping, final PCB assembly, and spare components.</p>
+<p>This Bill of Materials (BOM) identifies the remaining components required to purchase for the <strong>Data Collection Board</strong> in the ASU RAS 304 Embedded Systems project, updated to match the KiCad footprint assignments.</p>
+<p>The board is designed around the <strong>KNO PIC18F57Q43 Curiosity Nano</strong> microcontroller. Its power system accepts a +9V input and regulates it to +5V using an LM2596S-5 switching voltage regulator circuit. Previously acquired components (microcontroller, fuse, capacitors, resistors, LEDs, and push button) have been removed from the purchasing list.</p>
+<p>All remaining component selections and package sizes match the assigned KiCad footprints. DigiKey is the selected vendor for component sourcing.</p>
 <h2 id="bill-of-materials">Bill of Materials</h2>
-<p><strong>Table 1.</strong> Component list for the RAS 304 Data Collection Board.</p>
+<p><strong>Table 1.</strong> Remaining components to order for the RAS 304 Data Collection Board.</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Part Name / Description</th>
+<th style="text-align: left;">KiCad Footprint</th>
 <th style="text-align: center;">Qty.</th>
 <th style="text-align: right;">Unit Cost</th>
 <th style="text-align: right;">Total Cost</th>
@@ -1131,92 +1087,52 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">PIC18F57Q43 Curiosity Nano Development Board</td>
-<td style="text-align: center;">2</td>
-<td style="text-align: right;">TBD</td>
-<td style="text-align: right;">TBD</td>
-<td style="text-align: left;">Microchip</td>
-<td style="text-align: left;">DM164150</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/microchip-technology/DM164150/11586705">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.microchip.com/en-us/development-tool/DM164150">Datasheet</a></td>
-<td style="text-align: center;">U2</td>
-</tr>
-<tr>
-<td style="text-align: left;">5V Linear Voltage Regulator, TO-220</td>
+<td style="text-align: left;">5V Switching Voltage Regulator, TO-263-5</td>
+<td style="text-align: left;"><code>Package_TO_SOT_SMD:TO-263-5_TabPin3</code></td>
 <td style="text-align: center;">3</td>
-<td style="text-align: right;">$1.08</td>
-<td style="text-align: right;">$3.24</td>
-<td style="text-align: left;">STMicroelectronics</td>
-<td style="text-align: left;">L7805CV</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/stmicroelectronics/L7805CV/585964">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.st.com/resource/en/datasheet/l78.pdf">Datasheet</a></td>
+<td style="text-align: right;">$3.88</td>
+<td style="text-align: right;">$11.64</td>
+<td style="text-align: left;">Texas Instruments</td>
+<td style="text-align: left;">LM2596S-5.0/NOPB</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/texas-instruments/LM2596S-5.0-NOPB/334842">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.ti.com/product/LM2596">Datasheet</a></td>
 <td style="text-align: center;">U1</td>
 </tr>
 <tr>
-<td style="text-align: left;">500 mA Fast-Acting Surface Mount Fuse, 63V, 1206</td>
+<td style="text-align: left;">68 µH Shielded Power Inductor, 1.65A (12x12mm SMD)</td>
+<td style="text-align: left;"><code>Inductor_SMD:L_Bourns_SRR1260</code> (Suggested)</td>
 <td style="text-align: center;">3</td>
-<td style="text-align: right;">$1.47</td>
-<td style="text-align: right;">$4.41</td>
-<td style="text-align: left;">Littelfuse</td>
-<td style="text-align: left;">0437.500WR</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/littelfuse-inc/0437-500WR/1905895">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.littelfuse.com/assetdocs/fuse-437-datasheet?assetguid=7efbf979-42bb-4da1-b7b4-e1ec5d2b3789">Datasheet</a></td>
-<td style="text-align: center;">F1</td>
+<td style="text-align: right;">$1.34</td>
+<td style="text-align: right;">$4.02</td>
+<td style="text-align: left;">Bourns</td>
+<td style="text-align: left;">SRR1260-680M</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/bourns-inc/SRR1260-680M/1638201">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.bourns.com/docs/Product-Datasheets/SRR1260.pdf">Datasheet</a></td>
+<td style="text-align: center;">L1</td>
 </tr>
 <tr>
-<td style="text-align: left;">0.1 µF Ceramic Capacitor, 50V, X7R, 0805</td>
+<td style="text-align: left;">5A, 40V Schottky Diode, DO-201AD Axial</td>
+<td style="text-align: left;"><code>Diode_THT:D_DO-201AD_P15.24mm_Horizontal</code></td>
 <td style="text-align: center;">3</td>
-<td style="text-align: right;">$0.51</td>
-<td style="text-align: right;">$1.53</td>
-<td style="text-align: left;">KEMET</td>
-<td style="text-align: left;">C0805X104K5RACAUTO</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/kemet/C0805X104K5RACAUTO/3314987">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.kemet.com/">Datasheet</a></td>
-<td style="text-align: center;">C1</td>
+<td style="text-align: right;">$0.58</td>
+<td style="text-align: right;">$1.74</td>
+<td style="text-align: left;">ON Semiconductor</td>
+<td style="text-align: left;">1N5825</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/onsemi/1N5825/1475511">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.onsemi.com/pdf/datasheet/1n5823-d.pdf">Datasheet</a></td>
+<td style="text-align: center;">D5</td>
 </tr>
 <tr>
-<td style="text-align: left;">330 Ω Resistor, 1%, 1/8W, 0805</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: right;">$0.10</td>
-<td style="text-align: right;">$0.30</td>
-<td style="text-align: left;">YAGEO</td>
-<td style="text-align: left;">RC0805FR-07330RL</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/yageo/RC0805FR-07330RL/727866">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.yageo.com/">Datasheet</a></td>
-<td style="text-align: center;">R1</td>
-</tr>
-<tr>
-<td style="text-align: left;">10 kΩ Resistor, 1%, 1/8W, 0805</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: right;">$0.10</td>
-<td style="text-align: right;">$0.30</td>
-<td style="text-align: left;">Stackpole</td>
-<td style="text-align: left;">RMCF0805FT10K0RES</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/0805/52">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.seielect.com/">Datasheet</a></td>
-<td style="text-align: center;">R2</td>
-</tr>
-<tr>
-<td style="text-align: left;">Red Indicator LED (Candidate)</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: right;">$0.20</td>
-<td style="text-align: right;">$0.60</td>
-<td style="text-align: left;">Inolux</td>
-<td style="text-align: left;">INL-5AR30</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/inolux/INL-5AR30/7604627">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://www.inolux-corp.com/">Datasheet</a></td>
-<td style="text-align: center;">D1</td>
-</tr>
-<tr>
-<td style="text-align: left;">Omron B3FS Tactile Push Button</td>
-<td style="text-align: center;">3</td>
-<td style="text-align: right;">$0.75</td>
-<td style="text-align: right;">$2.25</td>
-<td style="text-align: left;">Aratas (formerly Omron)</td>
-<td style="text-align: left;">B3FS-1000P</td>
-<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/aratas-america-llc/B3FS-1000P/277814">DigiKey</a></td>
-<td style="text-align: center;"><a href="https://omronfs.omron.com/">Datasheet</a></td>
-<td style="text-align: center;">SW1</td>
+<td style="text-align: left;">2x5 Pin IDC Box Header, 2.54mm Pitch, Vertical</td>
+<td style="text-align: left;"><code>Connector_IDC:IDC-Header_2x05_P2.54mm_Vertical</code></td>
+<td style="text-align: center;">9</td>
+<td style="text-align: right;">$0.65</td>
+<td style="text-align: right;">$5.85</td>
+<td style="text-align: left;">Amphenol CS</td>
+<td style="text-align: left;">68020-210HLF</td>
+<td style="text-align: center;"><a href="https://www.digikey.com/en/products/detail/amphenol-cs-fci/68020-210HLF/1878492">DigiKey</a></td>
+<td style="text-align: center;"><a href="https://www.amphenol-cs.com/">Datasheet</a></td>
+<td style="text-align: center;">J1, J2, J3</td>
 </tr>
 </tbody>
 </table>
@@ -1231,91 +1147,58 @@
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Voltage Regulator (U1)</td>
-<td style="text-align: right;">$3.24</td>
+<td style="text-align: left;">Switching Voltage Regulator (U1)</td>
+<td style="text-align: right;">$11.64</td>
 </tr>
 <tr>
-<td style="text-align: left;">Ceramic Capacitor (C1)</td>
-<td style="text-align: right;">$1.53</td>
+<td style="text-align: left;">68 µH Power Inductor (L1)</td>
+<td style="text-align: right;">$4.02</td>
 </tr>
 <tr>
-<td style="text-align: left;">330 Ω Resistors (R1)</td>
-<td style="text-align: right;">$0.30</td>
+<td style="text-align: left;">Schottky Diode (D5)</td>
+<td style="text-align: right;">$1.74</td>
 </tr>
 <tr>
-<td style="text-align: left;">10 kΩ Resistors (R2)</td>
-<td style="text-align: right;">$0.30</td>
-</tr>
-<tr>
-<td style="text-align: left;">Debug LED (D1)</td>
-<td style="text-align: right;">$0.60</td>
-</tr>
-<tr>
-<td style="text-align: left;">Push Button (SW1)</td>
-<td style="text-align: right;">$2.25</td>
+<td style="text-align: left;">2x5 IDC Headers (J1, J2, J3)</td>
+<td style="text-align: right;">$5.85</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Subtotal</strong></td>
-<td style="text-align: right;"><strong>$8.22</strong></td>
+<td style="text-align: right;"><strong>$23.25</strong></td>
 </tr>
 </tbody>
 </table>
-<p><em>Note: The subtotal excludes the microcontroller development board, fuse, shipping, and applicable taxes. Prices are estimates and may change depending on DigiKey availability and order quantity.</em></p>
-<h2 id="component-selection-and-verification">Component Selection and Verification</h2>
-<p>The following considerations apply before finalizing the hardware order:</p>
-<ul>
-<li><strong>U2 – Microcontroller:</strong> The Microchip PIC18F57Q43 Curiosity Nano is the primary controller. Confirm whether this development board is already supplied by ASU before purchasing.</li>
-<li><strong>U1 – Voltage Regulator:</strong> The STMicroelectronics L7805CV is a candidate for the LM7805 circuit. Verify its package, pin configuration, and PCB footprint.</li>
-<li><strong>F1 – Fuse:</strong> The schematic identifies a fuse but does not specify its current rating, voltage rating, or physical package. Final selection requires verification.</li>
-<li><strong>C1 – Capacitor:</strong> A 0.1 µF ceramic capacitor is retained as specified in the schematic. The 0805 package is a proposed footprint.</li>
-<li><strong>R1 and R2 – Resistors:</strong> The original resistance values of 330 Ω and 10 kΩ are retained. The 0805 package is proposed for PCB assembly.</li>
-<li><strong>D1 – Debug LED:</strong> The selected red LED is a candidate. Verify its color, dimensions, polarity, and PCB footprint.</li>
-<li><strong>SW1 – Debug Button:</strong> The B3FS-1000P is a candidate for the specified Omron B3FS switch. Verify the exact footprint before ordering.</li>
-</ul>
 <h2 id="external-interfaces">External Interfaces</h2>
-<p>The schematic also provides three external communication interfaces:</p>
 <table>
 <thead>
 <tr>
 <th style="text-align: left;">Interface</th>
-<th style="text-align: left;">Connections</th>
+<th style="text-align: left;">Schematic Pins</th>
+<th style="text-align: left;">Assigned KiCad Footprint</th>
 <th style="text-align: left;">Purpose</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;">Trigger</td>
-<td style="text-align: left;">RX, TX, GND</td>
-<td style="text-align: left;">Trigger communication</td>
+<td style="text-align: left;">Trigger[cite: 1]</td>
+<td style="text-align: left;">8-pin (TX, RX, GPIO1–5, GND)[cite: 1]</td>
+<td style="text-align: left;"><code>IDC-Header_2x05_P2.54mm_Vertical</code> (10-pin)[cite: 2]</td>
+<td style="text-align: left;">Trigger communication[cite: 1]</td>
 </tr>
 <tr>
-<td style="text-align: left;">Laser / Scanning</td>
-<td style="text-align: left;">RX, TX, GND</td>
-<td style="text-align: left;">Laser and scanning communication</td>
+<td style="text-align: left;">Laser / Scanning[cite: 1]</td>
+<td style="text-align: left;">8-pin (TX, RX, GPIO1–5, GND)[cite: 1]</td>
+<td style="text-align: left;"><code>IDC-Header_2x05_P2.54mm_Vertical</code> (10-pin)[cite: 2]</td>
+<td style="text-align: left;">Laser and scanning communication[cite: 1]</td>
 </tr>
 <tr>
-<td style="text-align: left;">Interpretation</td>
-<td style="text-align: left;">RX, TX, GND</td>
-<td style="text-align: left;">External interpretation interface</td>
+<td style="text-align: left;">Interpretation[cite: 1]</td>
+<td style="text-align: left;">8-pin (TX, RX, GPIO1–5, GND)[cite: 1]</td>
+<td style="text-align: left;"><code>IDC-Header_2x05_P2.54mm_Vertical</code> (10-pin)[cite: 2]</td>
+<td style="text-align: left;">External interpretation interface[cite: 1]</td>
 </tr>
 </tbody>
 </table>
-<p>These interfaces are represented by signal connections in the current schematic. Physical connectors, mating cables, and mounting hardware must be selected once their footprints and connection requirements are finalized.</p>
-<h2 id="purchasing-and-assembly-notes">Purchasing and Assembly Notes</h2>
-<p>The quantities in this BOM are preliminary planning quantities.</p>
-<p>For standard discrete components, the proposed quantity of three accounts for:</p>
-<ol>
-<li>One component for breadboard prototyping.</li>
-<li>One component for the final PCB.</li>
-<li>One additional component as a spare.</li>
-</ol>
-<p>The development board quantity includes one primary unit and one spare.</p>
-<p>All components should be checked against the final KiCad footprints and electrical requirements before submitting the purchase request.</p>
-<p><strong>Vendor:</strong> DigiKey</p>
-<p><strong>Project:</strong> ASU RAS 304 – Data Collection Board</p>
-<p><strong>Primary Controller:</strong> KNO PIC18F57Q43 Curiosity Nano</p>
-<p><strong>Power Input:</strong> +9V</p>
-<p><strong>Regulated Output:</strong> +5V</p>
 
 
 
@@ -1429,7 +1312,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "toc.follow", "navigation.top", "navigation.path", "navigation.indexes", "navigation.prune", "content.action.edit", "navigation.footer"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
