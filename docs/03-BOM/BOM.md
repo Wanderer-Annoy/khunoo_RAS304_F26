@@ -38,5 +38,5 @@ All remaining component selections and package sizes match the assigned KiCad fo
 | Interface | Schematic Pins | Assigned KiCad Footprint | Purpose |
 |:---|:---|:---|:---|
 | Trigger| 8-pin (TX, RX, GPIO1–5, GND) | `IDC-Header_2x05_P2.54mm_Vertical` (10-pin) | Trigger communication |
-| Laser / Scanning | 8-pin (TX, RX, GPIO1–5, GND)[cite: 1] | `IDC-Header_2x05_P2.54mm_Vertical` (10-pin)| Laser and scanning communication |
+| Laser / Scanning | 8-pin (TX, RX, GPIO1–5, GND) | `IDC-Header_2x05_P2.54mm_Vertical` (10-pin)| Laser and scanning communication |
 | Interpretation | 8-pin (TX, RX, GPIO1–5, GND) | `IDC-Header_2x05_P2.54mm_Vertical` (10-pin) | External interpretation interface |
