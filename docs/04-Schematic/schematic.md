@@ -11,4 +11,4 @@ This schematic is designed to support a data collection board utilizing a **KNO_
 
 ## Resources
 
-The schematic as a PDF download is available [*Data_Collection_Board_v1.1.pdf*](DataCollectionBoard_V1.pdf), and the Zip folder of the project [*DataCollectionBoard_V1.zip*](DataCollectionBoard_V1.zip).
+The schematic as a PDF download is available [*Data_Collection_Board_v1.1.pdf*](DataCollectionBoard_V1.pdf), and the Zip folder of the project [*Data_Collection_Board_V_ZERO_1.1.zip*](Data_Collection_Board_V_ZERO_1.1.zip).
