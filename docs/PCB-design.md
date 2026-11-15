@@ -41,7 +41,7 @@ The final PCB layout was verified using the **KiCad Design Rules Checker (DRC)**
 **Figure 3. KiCad DRC results for the final PCB.**
 
 
-![KiCad DRC Results](docs/02-Component-Selection/DRC.png)
+![KiCad DRC Results](DRC.png)
 
 The DRC was used to verify the PCB for issues including:
 
@@ -75,7 +75,7 @@ The complete KiCad project is available below.
 
 
 
-[**Download KiCad ECAD Project**](docs/02-Component-Selection/Data_Collection_Board_V_ZERO_1.1.zip)
+[**Download KiCad ECAD Project**](Data_Collection_Board_V_ZERO_1.1.zip)
 
 The ECAD archive contains the editable KiCad project files for the Data Collection Board.
 
@@ -87,7 +87,7 @@ The final Gerber manufacturing package is available below.
 
 <!-- Replace this filename with your actual Gerber ZIP filename. -->
 
-[**Download Gerber Files**](docs/02-Component-Selection/Gerber_Oo_Khun_Team105.zip)
+[**Download Gerber Files**](Gerber_Oo_Khun_Team105.zip)
 
 The Gerber package contains the PCB fabrication layers and drill information required for manufacturing.
 
