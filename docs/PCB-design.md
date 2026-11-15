@@ -63,7 +63,7 @@ The generated PCB manufacturing files were checked using **JLCDFM** before fabri
 
 **Figure 4. JLCDFM PCB preview and DFM analysis.**
 
-![JLCDFM Verification](docs/02-Component-Selection/JLCDFM.png)
+![JLCDFM Verification](JLCDFM.png)
 
 The JLCDFM check provides additional verification that the generated PCB manufacturing files can be successfully interpreted and fabricated.
 
