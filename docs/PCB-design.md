@@ -16,7 +16,6 @@ The PCB was designed using **KiCad** and implements the finalized Data Collectio
 
 **Figure 1. Final Data Collection Board PCB layout.**
 
-<!-- Replace the filename below with your PCB layout image. -->
 
 ![Final PCB Layout](PCB_Layout.png)
 
@@ -26,7 +25,6 @@ The PCB was designed using **KiCad** and implements the finalized Data Collectio
 
 **Figure 2. 3D view of the completed Data Collection Board.**
 
-<!-- Replace the filename below with your KiCad 3D Viewer image. -->
 
 ![PCB 3D View](PCB_3D.png)
 
@@ -42,9 +40,8 @@ The final PCB layout was verified using the **KiCad Design Rules Checker (DRC)**
 
 **Figure 3. KiCad DRC results for the final PCB.**
 
-<!-- Replace the filename below with your DRC screenshot. -->
 
-![KiCad DRC Results](PCB_DRC.png)
+![KiCad DRC Results](docs/02-Component-Selection/DRC.png)
 
 The DRC was used to verify the PCB for issues including:
 
@@ -66,9 +63,7 @@ The generated PCB manufacturing files were checked using **JLCDFM** before fabri
 
 **Figure 4. JLCDFM PCB preview and DFM analysis.**
 
-<!-- Replace the filename below with your JLCDFM screenshot. -->
-
-![JLCDFM Verification](PCB_DFM.png)
+![JLCDFM Verification](docs/02-Component-Selection/JLCDFM.png)
 
 The JLCDFM check provides additional verification that the generated PCB manufacturing files can be successfully interpreted and fabricated.
 
@@ -78,9 +73,9 @@ The JLCDFM check provides additional verification that the generated PCB manufac
 
 The complete KiCad project is available below.
 
-<!-- Replace this filename with your actual KiCad ZIP filename. -->
 
-[**Download KiCad ECAD Project**](Data_Collection_Board_KiCad.zip)
+
+[**Download KiCad ECAD Project**](docs/02-Component-Selection/Data_Collection_Board_V_ZERO_1.1.zip)
 
 The ECAD archive contains the editable KiCad project files for the Data Collection Board.
 
@@ -92,39 +87,7 @@ The final Gerber manufacturing package is available below.
 
 <!-- Replace this filename with your actual Gerber ZIP filename. -->
 
-[**Download Gerber Files**](Data_Collection_Board_Gerbers.zip)
+[**Download Gerber Files**](docs/02-Component-Selection/Gerber_Oo_Khun_Team105.zip)
 
 The Gerber package contains the PCB fabrication layers and drill information required for manufacturing.
 
----
-
-## Final Design Files
-
-| File | Description |
-|:---|:---|
-| [KiCad ECAD Project](Data_Collection_Board_KiCad.zip) | Complete editable KiCad project |
-| [Gerber Manufacturing Files](Data_Collection_Board_Gerbers.zip) | PCB fabrication and drill files |
-| [PCB Layout](PCB_Layout.png) | Final PCB layout image |
-| [PCB 3D View](PCB_3D.png) | KiCad 3D representation |
-| [DRC Verification](PCB_DRC.png) | KiCad DRC showing zero errors |
-| [JLCDFM Verification](PCB_DFM.png) | Manufacturing DFM verification |
-
----
-
-## Final Verification
-
-Before release of the manufacturing files, the PCB design was reviewed for:
-
-- Complete electrical connectivity
-- Correct component footprints
-- Power and ground routing
-- Signal routing and clearances
-- Connector orientation and accessibility
-- Component placement
-- Board-edge clearance
-- Silkscreen placement
-- KiCad DRC compliance
-- Gerber generation
-- Manufacturing DFM verification
-
-The final Data Collection Board was prepared for fabrication after completing these verification steps.
