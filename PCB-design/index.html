@@ -602,28 +602,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#final-design-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Design Files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Verification
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1094,28 +1072,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#final-design-files" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Design Files
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#final-verification" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Final Verification
-      
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1156,14 +1112,10 @@
 <hr />
 <h2 id="pcb-layout">PCB Layout</h2>
 <p><strong>Figure 1. Final Data Collection Board PCB layout.</strong></p>
-<!-- Replace the filename below with your PCB layout image. -->
-
 <p><img alt="Final PCB Layout" src="PCB_Layout.png" /></p>
 <hr />
 <h2 id="pcb-3d-view">PCB 3D View</h2>
 <p><strong>Figure 2. 3D view of the completed Data Collection Board.</strong></p>
-<!-- Replace the filename below with your KiCad 3D Viewer image. -->
-
 <p><img alt="PCB 3D View" src="PCB_3D.png" /></p>
 <hr />
 <h2 id="design-verification">Design Verification</h2>
@@ -1171,9 +1123,7 @@
 <p>The final PCB layout was verified using the <strong>KiCad Design Rules Checker (DRC)</strong>.</p>
 <p><strong>Final DRC Result: 0 errors</strong></p>
 <p><strong>Figure 3. KiCad DRC results for the final PCB.</strong></p>
-<!-- Replace the filename below with your DRC screenshot. -->
-
-<p><img alt="KiCad DRC Results" src="PCB_DRC.png" /></p>
+<p><img alt="KiCad DRC Results" src="docs/02-Component-Selection/DRC.png" /></p>
 <p>The DRC was used to verify the PCB for issues including:</p>
 <ul>
 <li>Short circuits</li>
@@ -1189,77 +1139,20 @@
 <h2 id="design-for-manufacturing-check">Design for Manufacturing Check</h2>
 <p>The generated PCB manufacturing files were checked using <strong>JLCDFM</strong> before fabrication.</p>
 <p><strong>Figure 4. JLCDFM PCB preview and DFM analysis.</strong></p>
-<!-- Replace the filename below with your JLCDFM screenshot. -->
-
-<p><img alt="JLCDFM Verification" src="PCB_DFM.png" /></p>
+<p><img alt="JLCDFM Verification" src="docs/02-Component-Selection/JLCDFM.png" /></p>
 <p>The JLCDFM check provides additional verification that the generated PCB manufacturing files can be successfully interpreted and fabricated.</p>
 <hr />
 <h2 id="ecad-project-files">ECAD Project Files</h2>
 <p>The complete KiCad project is available below.</p>
-<!-- Replace this filename with your actual KiCad ZIP filename. -->
-
-<p><a href="Data_Collection_Board_KiCad.zip"><strong>Download KiCad ECAD Project</strong></a></p>
+<p><a href="docs/02-Component-Selection/Data_Collection_Board_V_ZERO_1.1.zip"><strong>Download KiCad ECAD Project</strong></a></p>
 <p>The ECAD archive contains the editable KiCad project files for the Data Collection Board.</p>
 <hr />
 <h2 id="gerber-manufacturing-files">Gerber Manufacturing Files</h2>
 <p>The final Gerber manufacturing package is available below.</p>
 <!-- Replace this filename with your actual Gerber ZIP filename. -->
 
-<p><a href="Data_Collection_Board_Gerbers.zip"><strong>Download Gerber Files</strong></a></p>
+<p><a href="docs/02-Component-Selection/Gerber_Oo_Khun_Team105.zip"><strong>Download Gerber Files</strong></a></p>
 <p>The Gerber package contains the PCB fabrication layers and drill information required for manufacturing.</p>
-<hr />
-<h2 id="final-design-files">Final Design Files</h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;">File</th>
-<th style="text-align: left;">Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="Data_Collection_Board_KiCad.zip">KiCad ECAD Project</a></td>
-<td style="text-align: left;">Complete editable KiCad project</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="Data_Collection_Board_Gerbers.zip">Gerber Manufacturing Files</a></td>
-<td style="text-align: left;">PCB fabrication and drill files</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="PCB_Layout.png">PCB Layout</a></td>
-<td style="text-align: left;">Final PCB layout image</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="PCB_3D.png">PCB 3D View</a></td>
-<td style="text-align: left;">KiCad 3D representation</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="PCB_DRC.png">DRC Verification</a></td>
-<td style="text-align: left;">KiCad DRC showing zero errors</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="PCB_DFM.png">JLCDFM Verification</a></td>
-<td style="text-align: left;">Manufacturing DFM verification</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="final-verification">Final Verification</h2>
-<p>Before release of the manufacturing files, the PCB design was reviewed for:</p>
-<ul>
-<li>Complete electrical connectivity</li>
-<li>Correct component footprints</li>
-<li>Power and ground routing</li>
-<li>Signal routing and clearances</li>
-<li>Connector orientation and accessibility</li>
-<li>Component placement</li>
-<li>Board-edge clearance</li>
-<li>Silkscreen placement</li>
-<li>KiCad DRC compliance</li>
-<li>Gerber generation</li>
-<li>Manufacturing DFM verification</li>
-</ul>
-<p>The final Data Collection Board was prepared for fabrication after completing these verification steps.</p>
 
 
 
