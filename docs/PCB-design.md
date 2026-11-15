@@ -17,7 +17,7 @@ The PCB was designed using **KiCad** and implements the finalized Data Collectio
 **Figure 1. Final Data Collection Board PCB layout.**
 
 
-![Final PCB Layout](PCB_Layout.png)
+![Final PCB Layout](Layout.png)
 
 ---
 
@@ -26,7 +26,7 @@ The PCB was designed using **KiCad** and implements the finalized Data Collectio
 **Figure 2. 3D view of the completed Data Collection Board.**
 
 
-![PCB 3D View](PCB_3D.png)
+![PCB 3D View](3D_PCB.png)
 
 ---
 
