@@ -17,7 +17,8 @@ The PCB was designed using **KiCad** and implements the finalized Data Collectio
 **Figure 1. Final Data Collection Board PCB layout.**
 
 
-![Final PCB Layout](Layout.png)
+![BOTTOM B.CU PCB Layout](BCU.png)
+![TOP F.CU PCB Layout](FCU.png)
 
 ---
 
@@ -75,7 +76,7 @@ The complete KiCad project is available below.
 
 
 
-[**Download KiCad ECAD Project**](Data_Collection_Board_V_ZERO_1.1.zip)
+[**Download KiCad ECAD Project**](Data_Collection_Board_V_ZERO_1.2.zip)
 
 The ECAD archive contains the editable KiCad project files for the Data Collection Board.
 
