@@ -42,7 +42,7 @@ The final PCB layout was verified using the **KiCad Design Rules Checker (DRC)**
 **Figure 3. KiCad DRC results for the final PCB.**
 
 
-![KiCad DRC Results](DRC.png)
+![KiCad DRC Results](OO_KHUN_DCR.png)
 
 The DRC was used to verify the PCB for issues including:
 
@@ -64,7 +64,7 @@ The generated PCB manufacturing files were checked using **JLCDFM** before fabri
 
 **Figure 4. JLCDFM PCB preview and DFM analysis.**
 
-![JLCDFM Verification](JLCDFM.png)
+![JLCDFM Verification](OO_KHUN_DFM.png)
 
 The JLCDFM check provides additional verification that the generated PCB manufacturing files can be successfully interpreted and fabricated.
 
@@ -76,7 +76,7 @@ The complete KiCad project is available below.
 
 
 
-[**Download KiCad ECAD Project**](Data_Collection_Board_V_ZERO_1.2.zip)
+[**Download KiCad ECAD Project**](DataCollectionBoard_V1.4.zip)
 
 The ECAD archive contains the editable KiCad project files for the Data Collection Board.
 
@@ -88,7 +88,7 @@ The final Gerber manufacturing package is available below.
 
 <!-- Replace this filename with your actual Gerber ZIP filename. -->
 
-[**Download Gerber Files**](Gerber_Oo_Khun_Team105.zip)
+[**Download Gerber Files**](OO_KHUN_GERBER.zip)
 
 The Gerber package contains the PCB fabrication layers and drill information required for manufacturing.
 
